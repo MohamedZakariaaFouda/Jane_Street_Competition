@@ -1,0 +1,29 @@
+# Environments
+.env
+.venv
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Data directories
+data/raw/
+data/interim/
+data/processed/
+data/external/
+
+# OS files
+.DS_Store
+
+# Reports
+reports/figures/
