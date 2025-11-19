@@ -9,6 +9,7 @@ import lightgbm as lgb
 import xgboost as xgb
 import catboost as cbt
 import numpy as np 
+import copy
 from joblib import Parallel, delayed
 import kaggle_evaluation.jane_street_inference_server
 
@@ -168,7 +169,7 @@ def train_one_fold(model_dict, model_name, fold_id):
     w_train = df['weight'].loc[df['date_id'].isin(selected_dates)]
 
     # Create a fresh copy of the model
-    #model = copy.deepcopy(model_dict[model_name])
+    model = copy.deepcopy(model_dict[model_name])
 
     # LightGBM
     if model_name == "lgb":
