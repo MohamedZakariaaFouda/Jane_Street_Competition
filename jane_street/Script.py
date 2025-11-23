@@ -10,9 +10,9 @@ import xgboost as xgb
 import catboost as cbt
 import numpy as np 
 import copy
+import gc
 from joblib import Parallel, delayed
-import kaggle_evaluation.jane_street_inference_server
-
+import kaggle_evaluation.jane_street_inference_server as inference_server
 # =================
 # Configuration
 # ==================
